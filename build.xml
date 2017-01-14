@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="FRC Deployment"
+<project name="FRC125 Base build"
          default="compile"
          xmlns:ivy="antlib:org.apache.ivy.ant">
 
@@ -15,12 +15,12 @@
   <!-- Import wpilib base build -->
   <!-- Depends on `ant init-ivy -buildfile helper.xml` running before the build -->
   <!--  -->
-  <property name="wpilib" value="wpilib"/>
-  <property name="userLibs.dir" value="${wpilib}/userLibs"/>
+  <property name="wpilib" value="../wpilib"/>
+  <property name="userLibs.dir" value="../${wpilib}/userLibs"/>
   <property file="root.build.properties"/>
-  <property file="${wpilib}/ant/build.properties"/>
-  <property file="${wpilib}/ant/ni_image.properties"/>
-  <import file="${wpilib.ant.dir}/build.xml"/>
+  <property file="../${wpilib}/ant/build.properties"/>
+  <property file="../${wpilib}/ant/ni_image.properties"/>
+  <import file="../${wpilib.ant.dir}/build.xml"/>
 
   <target name="download-ivy" unless="offline">
     <mkdir dir="${ivy.jar.dir}"/>

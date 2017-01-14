@@ -17,7 +17,7 @@
   <!--  -->
   <property name="wpilib" value="wpilib"/>
   <property name="userLibs.dir" value="${wpilib}/userLibs"/>
-  <property file="build.properties"/>
+  <property file="root.build.properties"/>
   <property file="${wpilib}/ant/build.properties"/>
   <property file="${wpilib}/ant/ni_image.properties"/>
   <import file="${wpilib.ant.dir}/build.xml"/>

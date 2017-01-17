@@ -16,3 +16,14 @@ understand).
 This project is published on [jitpack](https://jitpack.io/#FRC125/ant-buildfiles) an awesome site
 that makes it super easy to turn a repository into a downloadable jar for use as
 a dependency.
+
+## Release
+To cut a release:
+1. bump the version in `pom.xml` to `1.0.x`.
+2. Push to master
+3. Make a release [here](https://github.com/FRC125/maven-build-files/releases)
+   using the version # that you bumped to.
+4. Go to jitpack https://jitpack.io/#FRC125/maven-build-files, and log in.
+5. Click `get it` next to the version that you just cut a release for.
+6. Wait for jitpack to build it... Congratulations now you can depend on this in
+   other projects.

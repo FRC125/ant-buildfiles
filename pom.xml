@@ -8,14 +8,13 @@
 
   <groupId>com.github.FRC125</groupId>
   <artifactId>ant-buildfiles</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <packaging>pom</packaging>
 
   <properties>
     <nutrons.java.source.version>1.8</nutrons.java.source.version>
     <nutrons.java.target.version>1.8</nutrons.java.target.version>
   </properties>
-
 
   <dependencyManagement>
     <dependencies>
@@ -35,10 +34,17 @@
         <version>1.3</version>
       </dependency>
       <dependency>
+        <groupId>org.reactivestreams</groupId>
+        <artifactId>reactive-streams</artifactId>
+        <version>1.0.0</version>
+      </dependency>
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.12</version>
       </dependency>
+
+      <!-- wierd wpilib deps -->
       <dependency>
         <groupId>edu.wpi</groupId>
         <artifactId>opencv</artifactId>
@@ -257,9 +263,6 @@
           </plugin>
         </plugins>
       </build>
-
     </profile>
   </profiles>
-
-
 </project>
